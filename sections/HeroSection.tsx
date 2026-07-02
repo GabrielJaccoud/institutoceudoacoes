@@ -48,7 +48,7 @@ export const HeroSection: React.FC = () => {
           className="animate-in fade-in slide-in-from-bottom-6 duration-700 delay-600 fill-mode-forwards
           font-sans text-lg md:text-xl text-white/85 max-w-[600px] mx-auto mt-6 leading-relaxed"
         >
-          Mais que construir estruturas, construimos oportunidades. Cada doacao e um tijolo na transformacao social do Brasil.
+          Doe de qualquer lugar do mundo. Sua contribuição, independente do valor ou origem, transforma comunidades brasileiras através de projetos de engenharia social e sustentabilidade.
         </p>
 
         {/* CTAs */}

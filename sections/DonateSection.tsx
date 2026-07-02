@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Smartphone, TrendingUp, Building2, Globe, Heart } from 'lucide-react';
+import { Smartphone, TrendingUp, Building2, Globe } from 'lucide-react';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
 const donationOptions = [
@@ -55,7 +55,7 @@ export const DonateSection: React.FC = () => {
   const handleStripeCheckout = () => {
     const amount = customAmount || '100';
     // Integração com Stripe - será configurada com variáveis de ambiente
-    const stripePublicKey = import.meta.env.VITE_STRIPE_PUBLIC_KEY;
+    const stripePublicKey = (import.meta as any).env.VITE_STRIPE_PUBLIC_KEY;
     if (stripePublicKey) {
       // Aqui será feito o redirect para o Stripe Checkout
       window.location.href = `/api/donate?amount=${amount}&method=stripe`;
@@ -64,16 +64,16 @@ export const DonateSection: React.FC = () => {
     }
   };
 
-  const handlePayPalCheckout = () => {
-    const amount = customAmount || '100';
-    // Integração com PayPal - será configurada com variáveis de ambiente
-    const paypalClientId = import.meta.env.VITE_PAYPAL_CLIENT_ID;
-    if (paypalClientId) {
-      window.location.href = `/api/donate?amount=${amount}&method=paypal`;
-    } else {
-      alert('PayPal não está configurado. Entre em contato conosco.');
-    }
-  };
+  // const handlePayPalCheckout = () => {
+  //   const amount = customAmount || '100';
+  //   // Integração com PayPal - será configurada com variáveis de ambiente
+  //   const paypalClientId = (import.meta as any).env.VITE_PAYPAL_CLIENT_ID;
+  //   if (paypalClientId) {
+  //     window.location.href = `/api/donate?amount=${amount}&method=paypal`;
+  //   } else {
+  //     alert('PayPal não está configurado. Entre em contato conosco.');
+  //   }
+  // };
 
   const handlePIXCopy = () => {
     const pixKey = 'doacao@institutoceu.org';

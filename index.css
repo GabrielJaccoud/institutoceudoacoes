@@ -74,7 +74,7 @@
 
   /* Gold gradient button */
   .btn-gold {
-    @apply inline-flex items-center justify-center gap-2 px-10 py-4 rounded-pill font-sans font-semibold text-base uppercase tracking-wider;
+    @apply inline-flex items-center justify-center gap-2 px-10 py-4 rounded-full font-sans font-semibold text-base uppercase tracking-wider;
     background: linear-gradient(135deg, #C9A84C, #A6893A);
     color: #0F1923;
     box-shadow: 0 4px 20px rgba(201,168,76,0.3);
@@ -91,7 +91,7 @@
 
   /* Navy button */
   .btn-navy {
-    @apply inline-flex items-center justify-center gap-2 px-10 py-4 rounded-pill font-sans font-semibold text-base uppercase tracking-wider;
+    @apply inline-flex items-center justify-center gap-2 px-10 py-4 rounded-full font-sans font-semibold text-base uppercase tracking-wider;
     background: #0A2463;
     color: white;
     transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
@@ -103,7 +103,7 @@
 
   /* Ghost button */
   .btn-ghost {
-    @apply inline-flex items-center justify-center gap-2 px-10 py-3.5 rounded-pill font-sans font-semibold text-base uppercase tracking-wider;
+    @apply inline-flex items-center justify-center gap-2 px-10 py-3.5 rounded-full font-sans font-semibold text-base uppercase tracking-wider;
     background: transparent;
     border: 2px solid #C9A84C;
     color: #C9A84C;
@@ -116,7 +116,7 @@
   }
 
   .btn-ghost-white {
-    @apply inline-flex items-center justify-center gap-2 px-10 py-3.5 rounded-pill font-sans font-semibold text-base uppercase tracking-wider;
+    @apply inline-flex items-center justify-center gap-2 px-10 py-3.5 rounded-full font-sans font-semibold text-base uppercase tracking-wider;
     background: transparent;
     border: 2px solid rgba(255,255,255,0.7);
     color: white;
